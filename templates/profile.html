@@ -3,13 +3,22 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>no_title</title>
+        <title>filip - daiky</title>
         <link rel="stylesheet" type="text/css" href="{% static 'style/main.css' %}">
     </head>
     <body>
         <div class="banner">
             <div class="container">
                 <p class="logo">daiky</p>
+            </div>
+        </div>
+        <div class="settings">
+            <div class="container">
+                {% if lang %}
+                <span>language: {{lang.name}}</span>
+                {% else %}
+                <span>language: unavailable</span>
+                {% endif %}
             </div>
         </div>
     </body>
